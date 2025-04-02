@@ -1,11 +1,12 @@
 
 # ML_AdverseDrugReactions
 
-## 🧠 Project Overview
+Presentation: https://view.genially.com/67eac743d57e6194f0663e8b 
+## Project Overview
 
 This project applies supervised machine learning techniques to predict adverse drug reactions (ADRs) from the chemical structure of pharmaceutical compounds. We use a public dataset from Kaggle and enrich it with canonical SMILES generated using RDKit in Google Colab.
 
-## 💾 Dataset
+## Dataset
 
 - **Source**: [Kaggle – Dataset for Adverse Drug Reaction](https://www.kaggle.com/datasets/qwertychuahn/dataset-for-adverse-drug-reaction?select=adr_dataset.csv)
 - **File Used**: `data_sample_enriched.csv`
@@ -14,13 +15,13 @@ This project applies supervised machine learning techniques to predict adverse d
     - 24 binary columns represent different types of adverse drug reactions (ADR)
     - The dataset has been enriched with canonical SMILES using the RDKit library
 
-## 🎯 Goal
+## Goal
 
 To build a machine learning model capable of:
 - Predicting the types of ADRs associated with a compound
 - Optionally clustering compounds by similar ADR profiles
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 src/
@@ -33,15 +34,14 @@ src/
 └── utils/                     # Custom functions used in pipeline
 ```
 
-## 🧪 Methods Used
+## Methods Used
 
 - Exploratory Data Analysis (EDA)
 - Multilabel Classification (RandomForest, OneVsRest)
-- (Optional) Clustering using KMeans
-- Evaluation Metrics: Accuracy, F1-score, Silhouette Score (if clustering)
+- Evaluation Metrics: F1-score
 
-## 📌 Notes
+## Notes
 
 - All modeling and processing is performed in Python
-- Canonical SMILES were computed using RDKit from Google Colab
+- Canonical SMILES were computed using RDKit from Google Colab & PubChemPy
 - Dataset enriched and ready for downstream Machine Learning tasks
