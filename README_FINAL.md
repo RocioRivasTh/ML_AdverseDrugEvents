@@ -30,7 +30,7 @@ src/
 ├── img/                       # EDA graphs and visualizations
 ├── notebooks/                 # Development notebooks (exploration, feature engineering)
 ├── results_notebook/          # Final notebook for reproducible execution
-├── models/                    # Trained models saved as .joblib or .pkl
+├── models/                    # Trained models saved as .joblib 
 └── utils/                     # Custom functions used in pipeline
 ```
 
